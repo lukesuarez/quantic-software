@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Estilo -->
+    <link rel ="stylesheet" href="estilo/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!--Font-Awesome-->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel='icon' href="imgs/favicon.ico" type='image/x-icon' sizes="16x16" />
+
+    
+    <style>
+        body {
+          font-family: 'Roboto', sans-serif;
+        }
+    </style>
+
+    <title>Quantic | Formulário </title>
+  </head>
+  <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <a class="navbar-brand mr-5" href="login.html">
+                    <img src="./imgs/qs-branco.png" alt="logo-quantic-software" width="120" class="img-fluid">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active ">
+                      <a class="nav-link" href="#">TaxManager</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">SRM</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Cauldron</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Consultoria</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Suporte</a>
+                    </li>
+
+                  </ul>
+
+                  <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown config">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      <i class="fa fa-user fa-lg icone" style="color: white" data-target="tooltip" data-placement="bottom" title="Perfil e Configurações"></i>  
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                  <a class="dropdown-item" href="#">Configurações</a>
+                                  <a class="dropdown-item" href="#">Finalizar Sessão</a>
+                                </div>
+                        </li>
+                  </ul>
+
+                </div>
+        </nav>
+
+        <div class="container">
+            <div class="row">   
+                <div class="col text-center">
+                    <h1 class="h1 display-4 mt-4 mb-4">Formulário</h1>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm">                   
+
+                        <!-- ALFANUMÉRICO  -->
+                        <div class="form-row campos">
+                            <div class="form-group col-6">
+                                <input type="text" class="form-control" id="inputNum" placeholder="Selecione o Código" autofocus>
+                              
+                            </div>
+                        
+                            <!-- MODAL BUTTON -->
+                            <div class="form-group col-6">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                ...
+                              </button>
+                            </div>
+                          </div>
+
+                        <div class="form-row campos">
+                              <div class="form-group col-6">
+                                  <input type="number" class="form-control" id="inputData" placeholder="Digite Números Inteiros">
+                              </div>
+                        </div>
+                         
+
+                         <!-- MODAL TABLE -->   
+
+                         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <label for="categoria">Filtrar por Categoria: </label>
+                                <input type="text" class="ml-3" id="inputCat" placeholder>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <table class="table table-striped">
+                                  <thead>
+                                    <tr>
+                                      <th scope="col">Código</th>
+                                      <th scope="col">Descrição</th>
+                                      <th scope="col">Categoria</th>
+                                      <th scope="col">Preço</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <th scope="row">1</th>
+                                      <td>Borracha Alta densidade</td>
+                                      <td>ZTG</td>
+                                      <td>450,67</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">2</th>
+                                      <td>Arruela</td>
+                                      <td>ZTG</td>
+                                      <td>120,00</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">3</th>
+                                      <td>Porca</td>
+                                      <td>Parafuso</td>
+                                      <td>50.90</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">4</th>
+                                      <td>Cimento</td>
+                                      <td>ZTG</td>
+                                      <td>47,80</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">5</th>
+                                      <td>Borracha Alta densidade</td>
+                                      <td>ZTG</td>
+                                      <td>450,67</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">6</th>
+                                      <td>Borracha Alta densidade</td>
+                                      <td>ZTG</td>
+                                      <td>450,67</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">7</th>
+                                      <td>Borracha</td>
+                                      <td>ZTG</td>
+                                      <td>450,67</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">8</th>
+                                      <td>Lixa</td>
+                                      <td>ZTG</td>
+                                      <td>450,67</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">9</th>
+                                      <td>Porca</td>
+                                      <td>ZTG</td>
+                                      <td>450,67</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">10</th>
+                                      <td>Cimento</td>
+                                      <td>ZTG</td>
+                                      <td>450,67</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">11</th>
+                                      <td>Borracha</td>
+                                      <td>ZTG</td>
+                                      <td>450,67</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">12</th>
+                                      <td>Parafuso</td>
+                                      <td>ZTG</td>
+                                      <td>450,67</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">13</th>
+                                      <td>Borracha Alta densidade</td>
+                                      <td>ZTG</td>
+                                      <td>450,67</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">14</th>
+                                      <td>Pastilha</td>
+                                      <td>ZTG</td>
+                                      <td>100,00</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">15</th>
+                                      <td>Ladrilho</td>
+                                      <td>ZTG</td>
+                                      <td>480,00</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                              <div class="modal-footer">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        
+                        
+
+                        <!-- DATA-->
+                        <div class="form-row campos">
+                                <div class="form-group col-6">
+                                    <label for="inteiro">DATA</label>
+                                    <input type="date" class="form-control" id="inputData" placeholder="DATA">
+                                </div>
+                        </div>
+                        <!-- HORA -->
+                        <div class="form-row campos">
+                                <div class="form-group col-6">
+                                    <label for="hora">HORA</label>
+                                    <input type="time" class="form-control" id="inputHora">
+                                </div>
+                        </div>
+                        <!-- MONTANTES -->
+                        <div class="form-row campos">
+                                <div class="form-group col-6">
+                                    <!--<label for="inteiro">MONTANTES</label> -->
+                                    <input type="number" class="form-control" id="inputNum" min="0.00" max="10000.00" step="0.01" placeholder="Digite o montante"> 
+                                </div>
+                        </div>
+                        <!-- DROPDOWN -->
+                        <div class="form-row campos">
+                                <div class="form-group col-6">
+                                    <label for="dropdown">DROPDOWN</label>
+                                    <select id="inputDrop" class="form-control">
+                                            <option selected>OPÇÃO A</option>
+                                            <option>OPÇÃO B</option>
+                                            <option>OPÇÃO C</option>
+                                            <option>OPÇÃO D</option>
+                                    </select>
+                                </div>
+                        </div>
+                        <!-- RADIOBUTTON-->
+                        <div class="form-row campos">
+                                <div class="form-group col-6">
+                                    <label for="radiobutton">RADIOBUTTON</label>
+                                    <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="exampleRadios" id="rb-opcaoA" value="rb-opcaoA" checked>
+                                            <label class="form-check-label" for="rb-opcaoA">
+                                              OPÇÃO A 
+                                            </label>
+                                          </div>
+                                          <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="exampleRadios" id="rb-opcaoB" value="rb-opcaoB">
+                                            <label class="form-check-label" for="rb-opcaoB">
+                                             OPÇÃO B
+                                            </label>
+                                          </div>
+                                          <div class="form-check">
+                                              <input class="form-check-input" type="radio" name="exampleRadios" id="rb-opcaoB" value="rb-opcaoB">
+                                              <label class="form-check-label" for="rb-opcaoB">
+                                               OPÇÃO C
+                                              </label>
+                                          </div>
+                                          <div class="form-check">
+                                              <input class="form-check-input" type="radio" name="exampleRadios" id="rb-opcaoB" value="rb-opcaoB">
+                                              <label class="form-check-label" for="rb-opcaoB">
+                                               OPÇÃO D
+                                              </label>
+                                          </div>  
+                                          <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="exampleRadios" id="rb-opcaoC" value="rb-opcaoC" disabled>
+                                            <label class="form-check-label" for="eb-opcaoC">
+                                              OPÇÃO E ( DESABILITADA )
+                                            </label>
+                                        </div>
+                                </div>
+                        </div>
+                        <!-- CHECKBOX -->
+                        <div class="form-row campos">
+                                <div class="form-group col-6">
+                                    <label for="radiobutton">CHECKBOX</label>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="cb-opcaoA" id="cb-opcaoA">
+                                        <label class="form-check-label" for="cb-opcaoA">
+                                            OPÇÃO A 
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="cb-opcaoB" id="cb-opcaoB">
+                                            <label class="form-check-label" for="cb-opcaoB">
+                                            OPÇÃO B
+                                            </label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="cb-opcaoC" id="cb-opcaoC">
+                                        <label class="form-check-label" for="cb-opcaoC">
+                                        OPÇÃO C
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" value="cb-opcaoD" id="cb-opcaoD">
+                                          <label class="form-check-label" for="cb-opcaoD">
+                                          OPÇÃO D
+                                          </label>
+                                    </div>  
+
+                                    <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="cb-opcaoE" id="cb-opcaoE" disabled>
+                                            <label class="form-check-label" for="cb-opcaoE">
+                                              OPÇÃO E (DESABILITADA)
+                                            </label>
+                                    </div>
+
+                                </div>
+                        </div>
+                        <!-- TEXT AREA -->
+                        <div class="form-row campos">
+                                <div class="form-group col-6">
+                                            <label for="textarea">TEXT AREA</label>
+                                            <textarea class="form-control" rows="5" id="textarea" placeholder="Digite na área de Texto"></textarea>    
+                                </div>
+                                
+                        </div>
+                        <!-- TAB -->
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item">
+                                  <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-A" role="tab" aria-controls="pills-home" aria-selected="true">TAB A</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-B" role="tab" aria-controls="pills-profile" aria-selected="false">TAB B</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-C" role="tab" aria-controls="pills-contact" aria-selected="false">TAB C</a>
+                                </li>
+                        </ul>
+                              <div class="tab-content mb-5" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-A" role="tabpanel" aria-labelledby="pills-home-tab">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis euismod ante. Maecenas consequat consequat sapien, vel congue purus porttitor quis. Mauris dapibus massa a augue laoreet eleifend. Donec rutrum ante ultricies eros pharetra eleifend. Vivamus in dignissim est. Ut vel lectus nisl. Nulla facilisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus risus ex, rutrum ut enim sed, aliquam molestie dolor. Ut porttitor velit ut velit sollicitudin dictum.
+                                </div>
+                                <div class="tab-pane fade" id="pills-B" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                        Aliquam malesuada maximus condimentum. Vestibulum tempus et libero quis rutrum. Nunc mollis lectus a gravida rutrum. Nam eu tortor diam. Mauris gravida dignissim erat eu molestie. Donec volutpat dictum urna. Sed mollis porttitor enim, quis scelerisque sapien consequat ut. Donec hendrerit, dui vitae rutrum rhoncus, justo neque gravida arcu, et mattis tortor urna vitae leo. Cras placerat vestibulum auctor.
+                                </div>
+                                <div class="tab-pane fade" id="pills-C" role="tabpanel" aria-labelledby="pills-contact-tab">
+                                        Donec a odio leo. Vivamus id libero in arcu tincidunt pulvinar. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent nec velit id est porta posuere. Sed placerat vulputate neque sed consectetur. Donec nec auctor urna. Quisque mollis mi lectus. Aliquam pulvinar, est interdum semper faucibus, est diam sodales dui, ullamcorper pharetra justo metus et enim. Etiam sollicitudin urna id tellus aliquet, ut tincidunt purus vulputate. Sed quis mattis ex. Etiam posuere ex in ligula posuere, ac egestas sem euismod. Nam ac augue in ante tempor accumsan.
+                                </div>
+                              </div>
+
+                        
+                </div>
+            </div>
+        </div>
+            <!-- Optional JavaScript -->
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <script src="node_modules/jquery/dist/jquery.js"></script>
+            <script src="node_modules/popper.js/dist/umd/popper.js"></script>
+            <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+/* media query mobile*/
+@media (max-width: 576px)
+{
+    .body{
+        width: 100%;
+    }
+    .fundo {
+        display: none;
+    }
+    .logo-quantic {
+        width:5px;
+        height:5px;
+    }
+    .fundo-mobile {
+    background-image: url('../imgs/fundo-mobile.jpg');
+    background-repeat: no-repeat;
+    background-color: #007bff;
+    background-size: cover;
+    margin-left:0px;
+    margin-right:0px;
+    
+    }
+    .idioma-mobile{
+        background-color: #007bff;
+        color:white;
+        
+    }
+   
+}
+
+
+
+
+.fundo {
+    background-image: url('../imgs/fundo.jpg');
+    background-repeat: no-repeat;
+    background-color: #1a1e2f;
+    background-size: cover;   
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+} 
+
+.full-height {
+    height: 100%;
+    } 
+
+.logo-quantic {
+    margin-bottom: 10em;
+    margin-top:10em;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+.branco {
+    background-color: white;
+}
+
+
+.formulario {
+    margin-top:5em;
+    margin-bottom:10em;
+}
+
+.destaque {
+    font-weight:bold;
+    font-size: 1.5em;
+}
+
+.senha {
+    font-size:1em;
+    text-align: left;
+}
+
+.config {
+    margin-right: 5em;
+}
+
+.nav-link {
+    margin-right:2em;
+}
+
+.campos{
+    margin-bottom:2em;
+}
+
+  /* input line */
+  input[type="text"],
+  input[type="password"],
+  input[type="date"],
+  input[type="time"],
+  input[type="number"],
+  select.form-control {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000000;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0;
+  }
+  
+  input[type="text"]:focus,
+  input[type="password"]:focus,
+  input[type="date"]:focus,
+  input[type="time"]:focus,
+  input[type="number"]:focus,
+  select.form-control:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  input[type="password"]:focus,
+  select.form-control:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .icone :hover {
+    content:'oi';
+  }
+
+  /*  */

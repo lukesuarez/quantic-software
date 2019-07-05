@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Estilo -->
+    <link rel ="stylesheet" href="estilo/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Jquery -->
+    <link rel="stylesheet" href="node_modules/jquery/dist/jquery.js">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel='icon' href="imgs/favicon.ico" type='image/x-icon' sizes="16x16" />
+
+
+    <style>
+
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+    </style>
+
+    <title>Quantic Software | Login de Usuário </title>
+  </head>
+        <body>
+              <div class="row full-height">
+                  <!-- FUNDO AZUL -->
+                  <div class="col-sm-6 fundo">
+                      <img src="imgs/qs-branco.png" alt="logo-quantic" class="img-fluid logo-quantic" width="500" height="500">
+                  </div>
+
+                  <!-- Idioma -->
+                          <div class="col-sm-6 ">
+                                <div class="container"> 
+                                    <div class="row">
+                                        <div class="col-6 fundo-mobile">
+                                        </div>
+                                        <div class="col-6 idioma-mobile ">
+                                        <div class="form-row mt-3 ">
+                                           <div class="col-xs-3 ml-auto">
+                                            <label for="inputLin">Selecionar Idioma: </label>
+                                            <select id="inputLin" class="form-control">
+                                                <option>English</option>
+                                                <option selected>Português</option>
+                                                <option>Español</option>
+                                            </select>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Inputs -->
+                                    <form class="formulario">  
+                                            <div class="form-group text-center">
+                                                <label for="user" class="control-label"><span class="destaque"></span></label>
+                                                <input type="text" name="user" class="form-control" id="user" autofocus required placeholder="Usuário">
+                                              </div>
+                  
+                                            <div class="form-group text-center">
+                                                <label for="password" class="control-label"><span class="destaque"></span></label>
+                                                <input type="password" name="password" class="form-control" id="password"  required placeholder="Senha">
+                                                <legend class="senha"> Esqueceu a sua senha? <a href="#">Clique aqui</a></legend>
+                                            </div>
+
+                                            <div class="form-row mt-5">
+                                                <button type="submit" class="btn btn-primary btn-lg btn-block">Conectar</button>
+                                            </div>
+                                      </form>
+
+                                </div>
+                          </div>  
+                </div>
+        </body>
+</html>
