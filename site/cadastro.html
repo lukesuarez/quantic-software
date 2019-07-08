@@ -13,9 +13,8 @@
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-
+    <!-- Favicon-->
     <link rel='icon' href="imgs/favicon.ico" type='image/x-icon' sizes="16x16" />
-
     
     <style>
         body {
@@ -79,10 +78,11 @@
             <div class="row">
                 <div class="col-sm">                   
 
+                        <form ></form>
                         <!-- ALFANUMÉRICO  -->
                         <div class="form-row campos">
                             <div class="form-group col-6">
-                                <input type="text" class="form-control" id="inputNum" placeholder="Selecione o Código" autofocus>
+                                <input type="text" class="form-control" id="inputNum" placeholder="Selecione Código" autofocus>
                               
                             </div>
                         
@@ -125,91 +125,91 @@
                                   </thead>
                                   <tbody>
                                     <tr>
-                                      <th scope="row">1</th>
+                                      <th scope="row"><a href="#">1</a></th>
                                       <td>Borracha Alta densidade</td>
                                       <td>ZTG</td>
                                       <td>450,67</td>
                                     </tr>
                                     <tr>
-                                      <th scope="row">2</th>
+                                      <th scope="row"><a href="#">2</a></th>
                                       <td>Arruela</td>
                                       <td>ZTG</td>
                                       <td>120,00</td>
                                     </tr>
                                     <tr>
-                                      <th scope="row">3</th>
+                                      <th scope="row"><a href="#">3</a></th>
                                       <td>Porca</td>
                                       <td>Parafuso</td>
                                       <td>50.90</td>
                                     </tr>
                                     <tr>
-                                      <th scope="row">4</th>
+                                      <th scope="row"><a href="#">4</a></th>
                                       <td>Cimento</td>
                                       <td>ZTG</td>
                                       <td>47,80</td>
                                     </tr>
                                     <tr>
-                                      <th scope="row">5</th>
+                                      <th scope="row"><a href="#">5</a></th>
                                       <td>Borracha Alta densidade</td>
                                       <td>ZTG</td>
                                       <td>450,67</td>
                                     </tr>
                                     <tr>
-                                      <th scope="row">6</th>
+                                      <th scope="row"><a href="#">6</a></th>
                                       <td>Borracha Alta densidade</td>
                                       <td>ZTG</td>
                                       <td>450,67</td>
                                     </tr>
                                     <tr>
-                                      <th scope="row">7</th>
+                                      <th scope="row"><a href="#">7</a></th>
                                       <td>Borracha</td>
                                       <td>ZTG</td>
                                       <td>450,67</td>
                                     </tr>
                                     <tr>
-                                      <th scope="row">8</th>
+                                      <th scope="row"><a href="#">8</a></th>
                                       <td>Lixa</td>
                                       <td>ZTG</td>
                                       <td>450,67</td>
                                     </tr>
                                     <tr>
-                                      <th scope="row">9</th>
+                                      <th scope="row"><a href="#">9</a></th>
                                       <td>Porca</td>
                                       <td>ZTG</td>
                                       <td>450,67</td>
                                     </tr>
                                     <tr>
-                                      <th scope="row">10</th>
+                                      <th scope="row"><a href="#">10</a></th>
                                       <td>Cimento</td>
                                       <td>ZTG</td>
                                       <td>450,67</td>
                                     </tr>
                                     <tr>
-                                      <th scope="row">11</th>
+                                      <th scope="row"><a href="#">11</a></th>
                                       <td>Borracha</td>
                                       <td>ZTG</td>
                                       <td>450,67</td>
                                     </tr>
                                     <tr>
-                                      <th scope="row">12</th>
+                                      <th scope="row"><a href="#">12</a></th>
                                       <td>Parafuso</td>
                                       <td>ZTG</td>
                                       <td>450,67</td>
                                     </tr>
                                     <tr>
-                                      <th scope="row">13</th>
+                                      <th scope="row"><a href="#">13</a></th>
                                       <td>Borracha Alta densidade</td>
                                       <td>ZTG</td>
                                       <td>450,67</td>
                                     </tr>
                                     <tr>
-                                      <th scope="row">14</th>
+                                      <th scope="row"><a href="#">14</a></th>
                                       <td>Pastilha</td>
                                       <td>ZTG</td>
                                       <td>100,00</td>
                                     </tr>
                                     <tr>
-                                      <th scope="row">15</th>
+                                      <th scope="row"><a href="#">15</a></th>
                                       <td>Ladrilho</td>
                                       <td>ZTG</td>
                                       <td>480,00</td>
@@ -236,8 +236,8 @@
                         <!-- HORA -->
                         <div class="form-row campos">
                                 <div class="form-group col-6">
-                                    <label for="hora">HORA</label>
-                                    <input type="time" class="form-control" id="inputHora">
+
+                                    <input type="number" class="form-control timepicker" id="inputHora" placeholder="Hora" step="00:10">
                                 </div>
                         </div>
                         <!-- MONTANTES -->
@@ -372,6 +372,30 @@
                 </div>
             </div>
         </div>
+
+
+        <script>
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+            (function() {
+              'use strict';
+              window.addEventListener('load', function() {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                  form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                  }, false);
+                });
+              }, false);
+            })();
+            </script>
+
+
             <!-- Optional JavaScript -->
             <!-- jQuery first, then Popper.js, then Bootstrap JS -->
             <script src="node_modules/jquery/dist/jquery.js"></script>
