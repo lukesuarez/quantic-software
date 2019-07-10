@@ -15,7 +15,7 @@
     }
 
     .direita{
-        background-color: #007bff;; 
+        background-color: #007bff;
 
     }
 
@@ -36,13 +36,18 @@
         display: none;
     }    
 
+  
+    .full-width{
+        width:auto ;
+        display: block;
+    }
+
 
     .barra-status-invalido {
         background-color: #f8d7da;
         color:#654447;
         font-weight: bold;
         text-align:center;
-        padding:1em;
     }    
 
     .barra-status-valido{
@@ -61,18 +66,16 @@
         background-size: cover;   
     }
 
-
     html, body {
         height: 100%;
         margin: 0;
         width:100%;
-        
+        overflow-x: hidden;
     } 
 
     .full-height {
         height: 100%;
-        } 
-
+        }    
 
     .logo-quantic {
         margin-bottom: 10em;
@@ -91,6 +94,7 @@
         margin-bottom:10em;
         padding-left: 5em;
         padding-right: 5em;
+        
     }
 
     .destaque {
@@ -105,6 +109,7 @@
 
     .config {
         margin-right: 5em;
+        
     }
 
     .nav-link {
