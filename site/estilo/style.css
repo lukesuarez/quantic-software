@@ -44,10 +44,15 @@
 
 
     .barra-status-invalido {
-        background-color: #f8d7da;
-        color:#654447;
+        background-color: #d40a1a;
+        color:white;
         font-weight: bold;
         text-align:center;
+        display: block;
+        padding:0.3em;
+        margin-top:60px;
+        display: block;
+
     }    
 
     .barra-status-valido{
@@ -55,7 +60,8 @@
         color:#0b560b;
         font-weight: bold;
         text-align:center;
-        padding:1em;
+        position: relative;
+        padding:0.3em;
     }  
 
 
